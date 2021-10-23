@@ -4,4 +4,5 @@ h1{
 .stats-section{
     width: 80vw;
     margin: 20px auto 0px;
+    padding-bottom: 40px;
 }
