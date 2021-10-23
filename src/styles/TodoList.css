@@ -1,0 +1,8 @@
+.todo-list{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 60px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}

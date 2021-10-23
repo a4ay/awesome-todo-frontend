@@ -1,0 +1,71 @@
+.todo-form{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    margin: 10px auto 0px;
+    gap: 15px;
+}
+.todo-form h3{
+    color: #0d3a17;
+}
+
+.todo-form .title-input{
+    height: 40px;
+    width: 400px;
+    font-size: 1.1rem;
+    padding: 0px 6px;
+    border: 1px solid #ced4da;
+    color: var(--text-normal);
+    border-radius: 0.1275rem;
+}
+
+.todo-form textarea{
+    color: var(--text-normal);
+    max-height: 200px;
+    font-size: 1.1rem;
+    padding: 12px;
+    width: 700px;
+    border:1px  solid #ced4da;
+    border-radius: 0.1275rem;
+}
+
+.title-input:focus, .todo-form textarea:focus{
+    border-color: #5cc56f;
+    outline: none;
+}
+.image-input{
+    margin-left: 10px;
+    font-size: 0.95rem;
+    color: var(--text-normal);
+    max-width: 300px;
+    overflow: hidden;
+}
+
+.image-input::file-selector-button{
+    height: 40px;
+    width: 100px;
+    background-color: transparent;
+    color: rgb(95, 95, 95);
+    border-radius: 2px;
+    border:1px  solid #ced4da;
+}
+
+.todo-form button{
+    width: 300px;
+    height: 45px;
+    font-size: 1rem;
+    background-color: #33733f;
+    color: white;
+    border-radius: 0.1275rem;
+    border: none;
+    cursor: pointer;
+}
+.todo-form button:hover{
+    background-color: #33733fef;
+}
+
+.loading{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #0d3a176e;
+}

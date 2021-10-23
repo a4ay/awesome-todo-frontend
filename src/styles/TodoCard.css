@@ -1,0 +1,64 @@
+
+
+.todo-card{
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    gap: 20px;
+    padding: 25px 20px;
+    border: 1px solid lightgray;
+}
+
+.todo-img{
+    height: 170px;
+    background-size: cover;
+}
+
+.todo-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 190px;
+}
+.todo-text h3{
+    color: var(--text-heading);
+}
+.todo-text p{
+    color: var(--text-normal);
+    padding: 6px 0px 20px;
+    max-height: 100px;
+}
+.todo-text span{
+    color: var(--text-normal);
+}
+.todo-controls{
+    display: flex;
+    gap: 12px;
+}
+.todo-controls button{
+    border: none;
+    height: 45px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.todo-status{
+    width: 120px;
+    color: white;
+    background-color: #33733f;
+    border-radius: 0.625px;
+}
+.todo-status:hover{
+    background-color: #265c2f;
+}
+
+.todo-delete{
+    width: 120px;
+    background-color: #E02401;
+    color: white;
+    border-radius: 0.625px;
+}
+
+.todo-delete:hover{
+    background-color: #b91c00;
+}
