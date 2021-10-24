@@ -2,7 +2,6 @@ import "../styles/Navbar.css";
 import { Link } from "react-router-dom";
 
 export default function({logout,user}){
-    console.log(user);
     return(
         <nav className="navbar">
         <div className="navbar-container">

@@ -9,12 +9,11 @@ export default function Todo(){
 
     const [todos,setTodos] = useState([]);
 
-    const addTodo = (todo)=>{
-        setTodos( prevTodo => prevTodo.concat(todo));
+    const addTodo = (todo:never)=>{
+        setTodos( (prevTodo )=> [todo,...prevTodo]);
     }
 
     const deleteTodo = (id)=>{
-        console.log(id);
         const newTodo = todos.filter((todo:any)=> (todo._id !== id));
         setTodos(newTodo);
     }
@@ -46,7 +45,6 @@ export default function Todo(){
             .then((response)=>{
                 const data = response.data;
                 setTodos(data as any);
-                console.log(data);
             })
         
     },[])

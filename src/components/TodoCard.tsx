@@ -4,7 +4,6 @@ import axios from "axios";
 export default function ({todo,deleteTodo,toggleTodo}) {
 
     const deleteHandler = (id)=>{
-        console.log(id);
         var config = {
             method: 'delete',
             url: 'http://localhost:5000/todo/delete/?id='+id,

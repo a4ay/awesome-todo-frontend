@@ -57,7 +57,6 @@ export default function Stats(){
             d[m.getMonth()] = d[m.getMonth()]+1;
             
         })
-        console.log(d);
         setData(d as any);
         setState({
             labels: months,
